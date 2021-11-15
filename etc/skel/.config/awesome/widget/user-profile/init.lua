@@ -45,7 +45,7 @@ local create_profile = function()
 	local profile_imagebox = wibox.widget {
 		{
 			id = 'icon',
-			image = widget_icon_dir .. 'jaylog.png',
+			image = widget_icon_dir .. 'user.jpeg',
 			widget = wibox.widget.imagebox,
 			resize = true,
 			forced_height = dpi(28),
@@ -99,7 +99,7 @@ local create_profile = function()
 				if not stdout:match('default') then
 					profile_imagebox.icon:set_image(stdout)
 				else
-					profile_imagebox.icon:set_image(widget_icon_dir .. 'jaylog.png')
+					profile_imagebox.icon:set_image(widget_icon_dir .. 'user.jpeg')
 				end
 			end
 		)

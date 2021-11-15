@@ -11,30 +11,29 @@ local config_dir = filesystem.get_configuration_dir()
 local widget_icon_dir = config_dir .. 'configuration/user-profile/'
 
 local msg_table = {
-	'See you later, alligator!',
+	'See you later, astronaut!',
 	'After a while, crocodile.',
 	'Stay out of trouble.',
 	'I’m out of here.',
-	'Yamete, onii-chan~. UwU',
 	'Okay...bye, fry guy!',
 	'Peace out!',
-	'Peace out, drunkard!',
+	'Peace out, rock ahead!',
 	'Gotta get going.',
 	'Out to the door, dinosaur.',
 	'Don\'t forget to come back!',
-	'Smell ya later!',
+	'See ya later!',
 	'In a while, crocodile.',
 	'Adios, amigo.',
 	'Begone!',
 	'Arrivederci.',
 	'Never look back!',
-	'So long, sucker!',
+	'So long, man!',
 	'Au revoir!',
 	'Later, skater!',
-	'That\'ll do pig. That\'ll do.',
+	'That\'ll do my friend. That\'ll do.',
 	'Happy trails!',
 	'Smell ya later!',
-	'See you soon, baboon!',
+	'See you soon, coccoon!',
 	'Bye Felicia!',
 	'Sayonara!',
 	'Ciao!',
@@ -63,7 +62,7 @@ local profile_name = wibox.widget {
 }
 
 local profile_imagebox = wibox.widget {
-	image = widget_icon_dir .. 'jaylog.png',
+	image = widget_icon_dir .. 'user.jpeg',
 	resize = true,
 	forced_height = dpi(140),
 	clip_shape = gears.shape.circle,
@@ -78,7 +77,7 @@ local update_profile_pic = function()
 			if not stdout:match('default') then
 				profile_imagebox:set_image(stdout)
 			else
-				profile_imagebox:set_image(widget_icon_dir .. 'jaylog.png')
+				profile_imagebox:set_image(widget_icon_dir .. 'user.jpeg')
 			end
 			profile_imagebox:emit_signal('widget::redraw_needed')
 		end

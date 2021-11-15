@@ -312,9 +312,9 @@ local global_keys = awful.util.table.join(
 		'Print',
 		function ()
 			-- awful.spawn.easy_async_with_shell(apps.utils.full_screenshot,function() end)
-			awful.spawn('gnome-screenshot')
+			awful.spawn('xfce4-screenshooter')
 		end,
-		{description = 'fullscreen screenshot', group = 'launcher'}
+		{description = 'screenshot tool', group = 'launcher'}
 	),
 	awful.key(
 		{modkey, 'Shift'}, 

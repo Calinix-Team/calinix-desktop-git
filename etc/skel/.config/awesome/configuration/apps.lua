@@ -32,7 +32,7 @@ return {
 		-- Default GUI package manager
 		package_manager = 'pamac-manager',
 		-- Default locker
-		lock = 'awesome-client "awesome.emit_signal(\'module::lockscreen_show\')"',
+		lock = 'i3lock-fancy',
 		-- Default quake terminal
 		quake = 'alacritty --name QuakeTerminal',
 		-- Default rofi global menu
@@ -72,9 +72,9 @@ return {
 	-- List of binaries/shell scripts that will execute for a certain task
 	utils = {
 		-- Fullscreen screenshot
-		full_screenshot = utils_dir .. 'gnome-screenshot',
+		full_screenshot = utils_dir .. 'xfce4-screenshooter',
 		-- Area screenshot
-		area_screenshot = utils_dir .. 'snap area',
+		area_screenshot = utils_dir .. 'xfce4-screenshooter',
 		-- Update profile picture
 		update_profile  = utils_dir .. 'profile-image'
 	}

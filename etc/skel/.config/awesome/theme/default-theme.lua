@@ -18,7 +18,7 @@ theme.font = 'Inter Regular 10'
 theme.font_bold = 'Inter Bold 10'
 
 -- Menu icon theme
-theme.icon_theme = 'Tela-blue-dark'
+theme.icon_theme = 'WhiteSur-dark'
 
 local awesome_overrides = function(theme)
 

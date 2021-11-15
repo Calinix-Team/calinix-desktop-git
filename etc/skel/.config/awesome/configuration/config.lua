@@ -85,7 +85,7 @@ return {
 			-- Clock format
 			military_clock = true,
 			-- Default password if there's no PAM integration
-			fallback_password = 'toor',
+			fallback_password = 'calinix',
 			-- Capture intruder using webcam
 			capture_intruder = true,
 			-- Intruder image save location (Will create directory if it doesn't exist)

@@ -63,7 +63,7 @@ local caps_text = wibox.widget {
 
 local profile_imagebox = wibox.widget {
 	id = 'user_icon',
-	image = widget_icon_dir .. 'jaylog.png',
+	image = widget_icon_dir .. 'user.jpeg',
 	resize = true,
 	forced_height = dpi(130),
 	forced_width = dpi(130),
@@ -112,7 +112,7 @@ local wanted_msg = wibox.widget {
 }
 
 local wanted_image = wibox.widget {
-	image  = widget_icon_dir .. 'jaylog.png',
+	image  = widget_icon_dir .. 'user.jpeg',
 	resize = true,
 	forced_height = dpi(120),
 	clip_shape = gears.shape.rounded_rect,
@@ -232,7 +232,7 @@ local locker = function(s)
 				if not stdout:match('default') then
 					profile_imagebox:set_image(stdout)
 				else
-					profile_imagebox:set_image(widget_icon_dir .. 'jaylog.png')
+					profile_imagebox:set_image(widget_icon_dir .. 'user.jpeg')
 				end
 			end
 		)

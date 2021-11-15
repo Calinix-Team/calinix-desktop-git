@@ -81,5 +81,6 @@ screen.connect_signal(
 awful.util.spawn_with_shell("nm-applet &")
 awful.util.spawn_with_shell("xfce4-power-manager &")
 awful.util.spawn_with_shell("picom &")
-awful.util.spawn_with_shell("pnmixer &")
+awful.util.spawn_with_shell("volumeicon &")
 awful.util.spawn_with_shell("xfce4-clipman &")
+awful.util.spawn_with_shell("iris &")
