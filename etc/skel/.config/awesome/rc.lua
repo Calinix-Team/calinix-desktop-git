@@ -81,7 +81,6 @@ screen.connect_signal(
 awful.util.spawn_with_shell("nm-applet --indicator &")
 awful.util.spawn_with_shell("xfce4-power-manager &")
 awful.util.spawn_with_shell("picom &")
-awful.util.spawn_with_shell("volumeicon &")
 awful.util.spawn_with_shell("xfce4-clipman &")
 awful.util.spawn_with_shell("numlockx on &")
 awful.util.spawn_with_shell("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &")

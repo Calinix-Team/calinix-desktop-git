@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Depends: Mugshot
-# Written by manilarome
-
 awesome_dir="${HOME}/.config/awesome/"
 user_profile_dir="${awesome_dir}/configuration/user-profile/"
 

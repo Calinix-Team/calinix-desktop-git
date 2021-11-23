@@ -36,9 +36,9 @@ return {
 		-- Default quake terminal
 		quake = 'alacritty --name QuakeTerminal',
 		-- Default rofi global menu
-		rofi_global = 'rofi -combi-modi window,drun -show combi -modi combi',
+		rofi_global = 'cmenu',
 		-- Default app menu
-		rofi_appmenu = 'rofi -combi-modi window,drun -show combi -modi combi'
+		rofi_appmenu = 'cmenu'
 
 		-- You can add more default applications here
 	},
@@ -50,8 +50,7 @@ return {
 		config_dir .. '/configuration/picom.conf',
 		-- Blueman applet
 		'blueberry-tray',
-		-- Music server
-		'mpd',
+		'pnmixer',
 		-- Polkit and keyring
 		'/usr/bin/lxqt-policykit-agent &' ..
 		' eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)',

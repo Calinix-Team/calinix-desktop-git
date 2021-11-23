@@ -1,13 +1,3 @@
-----------------------------------------------------------------------------
---- Simple Network Widget
---
--- Depends: iproute2, iw
---
---
--- @author manilarome &lt;gerome.matilla07@gmail.com&gt;
--- @copyright 2020 manilarome
--- @widget network
-----------------------------------------------------------------------------
 
 local awful = require('awful')
 local wibox = require('wibox')

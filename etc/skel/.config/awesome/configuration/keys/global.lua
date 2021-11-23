@@ -430,6 +430,24 @@ local global_keys = awful.util.table.join(
 		{description = 'open application drawer', group = 'launcher'}
 	),
 	awful.key(
+		{altkey}, 
+		'space',
+		function()
+			local focused = awful.screen.focused()
+
+			if focused.control_center then
+				focused.control_center:hide_dashboard()
+				focused.control_center.opened = false
+			end
+			if focused.info_center then
+				focused.info_center:hide_dashboard()
+				focused.info_center.opened = false
+			end
+			awful.spawn(apps.default.rofi_appmenu, false)
+		end,
+		{description = 'open application drawer', group = 'launcher'}
+	),
+	awful.key(
 		{}, 
 		'XF86Launch1',
 		function()
@@ -478,7 +496,56 @@ local global_keys = awful.util.table.join(
 			focused.info_center:toggle()
 		end,
 		{description = 'open info center', group = 'launcher'}
-	)
+	),
+	-- Control Center
+	awful.key(
+    {altkey, 'Escape'},
+    'b',
+    function()
+      awful.util.spawn_with_shell("btrinfo")
+    end,
+    {description = 'Power Control', group = 'control center'}
+  ),
+  awful.key(
+    {altkey, 'Escape'},
+    'n',
+    function()
+      awful.util.spawn_with_shell("wifinfo")
+    end,
+    {description = 'Network Control', group = 'control center'}
+  ),
+  awful.key(
+    {altkey, 'Escape'},
+    'a',
+    function()
+      awful.util.spawn_with_shell("apinfo")
+    end,
+    {description = 'Quick Apps Control', group = 'control center'}
+  ),
+  awful.key(
+    {altkey, 'Escape'},
+    't',
+    function()
+      awful.util.spawn_with_shell("sclck")
+    end,
+    {description = 'Clock Ctrl', group = 'control center'}
+  ),
+  awful.key(
+    {altkey, 'Escape'},
+    'l',
+    function()
+      awful.util.spawn_with_shell("blinfo")
+    end,
+    {description = 'Brightness Control', group = 'control center'}
+  ),
+  awful.key(
+    {altkey, 'Escape'},
+    'v',
+    function()
+      awful.util.spawn_with_shell("volimg")
+    end,
+    {description = 'Volume Control', group = 'control center'}
+  )
 )
 
 -- Bind all key numbers to tags.
