@@ -50,13 +50,10 @@ return {
 		config_dir .. '/configuration/picom.conf',
 		-- Blueman applet
 		'blueberry-tray',
-		'pnmixer',
 		-- Polkit and keyring
-		'/usr/bin/lxqt-policykit-agent &' ..
 		' eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)',
 		-- Load X colors
 		'xrdb $HOME/.Xresources',
-		'xinput set-prop "ELAN1301:00 04F3:30C6 Touchpad" "libinput Tapping Enabled" 1 &',
 		-- Audio equalizer
 		'pulseeffects --gapplication-service',
 		-- Lockscreen timer

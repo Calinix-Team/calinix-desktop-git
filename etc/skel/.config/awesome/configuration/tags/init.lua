@@ -31,12 +31,6 @@ local tags = {
 		gap = beautiful.useless_gap
 	},
 	{
-		type = 'games',
-		icon = icons.games,
-		default_app = apps.default.game,
-		gap = beautiful.useless_gap
-	},
-	{
 		type = 'graphics',
 		icon = icons.graphics,
 		default_app = apps.default.graphics,
@@ -56,13 +50,6 @@ local tags = {
 		gap = beautiful.useless_gap,
 		layout = awful.layout.suit.floating,
 		gap = 0
-	},
-	{
-		type = 'any',
-		icon = icons.development,
-		default_app = apps.default.development,
-		layout = awful.layout.suit.floating,
-		gap = beautiful.useless_gap
 	}
 	-- {
 	--   type = 'social',

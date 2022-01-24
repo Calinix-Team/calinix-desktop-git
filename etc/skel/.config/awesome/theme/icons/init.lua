@@ -7,7 +7,7 @@ return {
 	-- Action Bar
 	web_browser 		= dir .. 'tag-list/' .. 'web-browser.svg',
 	text_editor			= dir .. 'tag-list/' .. 'text-editor.svg',
-	social				= dir .. 'tag-list/' .. 'social.svg',
+	social				= dir .. 'tag-lis2t/' .. 'social.svg',
 	file_manager 		= dir .. 'tag-list/' .. 'file-manager.svg',
 	multimedia 			= dir .. 'tag-list/' .. 'multimedia.svg',
 	games 				= dir .. 'tag-list/' .. 'games.svg',

@@ -78,6 +78,7 @@ screen.connect_signal(
 )
 
 
+-- Startup Applications
 awful.util.spawn_with_shell("nm-applet --indicator &")
 awful.util.spawn_with_shell("xfce4-power-manager &")
 awful.util.spawn_with_shell("picom &")
