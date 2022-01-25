@@ -140,6 +140,17 @@ local main_control_row_sliders = wibox.widget {
 	)
 }
 
+local main_control_music_box = wibox.widget {
+	layout = wibox.layout.fixed.vertical,
+	format_item(
+		{
+			require('widget.mpd'),
+			margins = dpi(10),
+			widget = wibox.container.margin
+		}
+	)
+}
+
 local monitor_control_row_progressbars = wibox.widget {
 	layout = wibox.layout.fixed.vertical,
 	spacing = dpi(10),
